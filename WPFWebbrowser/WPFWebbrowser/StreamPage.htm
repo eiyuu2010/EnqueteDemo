@@ -1,0 +1,24 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>This page comes from Stream</title>
+
+    <script type="text/javascript">
+		function getAlert()
+		{
+		    alert("Hi the page is loaded!!!");
+		}
+		window.onload = getAlert;
+		
+		function WriteFromExternal(message){
+		    document.write("Message : " + message);
+		}
+    </script>
+
+</head>
+<body>
+    <input type="text" id="txtMessage" />
+    <input type="button" value="InvokeMe" onclick="javascript:window.external.InvokeMeFromJavascript(document.getElementById('txtMessage').value);" />
+</body>
+</html>

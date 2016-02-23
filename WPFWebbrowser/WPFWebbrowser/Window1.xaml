@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFWebbrowser.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="500" Width="700">
+    <Grid>
+        <DockPanel>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" DockPanel.Dock="Top">
+                <Button Click="ButtonNavigateToLocal">Load Enquete</Button>
+            </WrapPanel>
+            <TextBlock x:Name="tbMessageFromBrowser" DockPanel.Dock="Top" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" Margin="20"/>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="50,0,20,0">
+            <TextBox x:Name="txtMessageFromWPF" Width="150" FontSize="20"></TextBox>
+            <Button x:Name="btnCallDocument" Click="btnCallDocument_Click" Content="Do Script" HorizontalAlignment="Left" Margin="10,5,0,5" />
+            </StackPanel>
+            <WebBrowser x:Name="wbMain" DockPanel.Dock="Top" Margin="30" LoadCompleted="wbMain_LoadCompleted">
+            </WebBrowser>
+        </DockPanel>
+    </Grid>
+</Window>
