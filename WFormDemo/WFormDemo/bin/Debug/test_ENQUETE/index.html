@@ -1,0 +1,917 @@
+﻿<!-- saved from url=(0016)http://localhost -->
+<!doctype html>
+<html lang="ja-JP">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Enquente Full</title>
+
+		<link rel="stylesheet" type="text/css" href="./jquery.datepick.css" media="all">
+		<link rel="stylesheet" type="text/css" href="./jquery.mobile-1.2.0.css" media="all">
+	
+		<script type="text/javascript" src="./jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="./script.js"></script>
+		<script type="text/javascript" src="./jquery.datepick.js"></script>
+		<script type="text/javascript" src="./jquery.datepick-ja.js"></script>
+		<script type="text/javascript" src="./yav.js"></script>
+		<script type="text/javascript" src="./yav-config.js"></script>
+		<script type="text/javascript" src="./jquery.mobile-1.2.0.js"></script>
+	
+
+<style type="text/css">
+<!--
+
+/*input {
+	font-family:Arial,Helvetica,sans-serif;
+}
+*/
+.question_title{
+	float:left;
+}
+
+.question_title_1{
+	float:left;
+	color: #FFFFFF;
+	padding-top:15px;
+	font-size:180%;
+}
+.question_title_2{
+	float:left;
+	color: #FFFFFF;
+	font-size:180%;
+}
+
+.question_title_1_s{
+	float:left;
+	color: #FFFFFF;
+	padding-top:15px;
+	font-size:160%;
+	width:200px;
+}
+.question_title_2_s{
+	float:left;
+	color: #FFFFFF;
+	font-size:160%;
+	width:200px;
+}
+
+.question_score{
+	color:red;
+	float:right;
+	margin-right:20px;
+	margin-top: 2em;
+	vertical-align: bottom;
+}
+
+.choice_score {
+	color:red;
+	font-size: 13px;
+}
+
+.enquete_type{
+	font-size:90%;
+	font-color:#333333;
+}
+
+.enquete_title{
+	color: #0066FF;
+	font-weight:bold;
+	font-size:180%;
+	margin:0;
+	padding:0;
+}
+
+.question_num{
+	float:left;
+	padding:10px 10px 10px 10px;
+	font-size:120%;
+	margin-right:10px;
+	background-color:#FFFFFF;
+	color:#66CCFF;
+	text-align:center;
+}
+
+
+#replyInputQuestion {
+	color: #FFFFFF;
+	background-color: #66CCFF;
+	padding: 8px;
+}
+
+#replyInputChoice, #replyInputChoice, #enqueteEntryField {
+
+	color: #333333;
+	background-color: #FFFFFF;
+	padding: 8px;
+	margin: 8px 0;
+	font-size:90%;
+	text-align:left;
+	line-height: 1.5;
+
+}
+
+#replyInputChoice, #replyInputChoice label, #enqueteEntryField, #enqueteEntryField label {
+	color: #333333;
+}
+
+#replyConfirmQuestion {
+	color: #FFFFFF;
+	background-color: #66CCFF;
+	padding: 8px;
+ }
+
+.replyConfirmChoice {
+ 	color: #333333;
+ 	background-color: #FFFFFF;
+	padding: 8px;
+	margin: 8px 0;
+	font-size:90%;
+	text-align:left;
+
+}
+
+.replyConfirmChoice div {
+	font-size:120%;
+	margin-bottom: 10px;
+}
+
+#replyEnd {
+	padding: 8px;
+}
+
+.choice_area{
+	background-color:#FFFFFF;
+	padding:10px 20px 10px 20px;
+	margin:10px 0px 0px 0px;
+	   -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+         -o-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.innerError {
+    background-position: left top;
+    background-repeat: no-repeat;
+    /*background-color: #F3F3F3;*/
+    background-color: #FFFFFF;
+    /*padding-left: 10px;
+    padding-top: 1px;*/
+    padding: 10px;
+    margin-bottom:20px;
+    color: #FF0000;
+}
+.questionChoice {
+	color: #333333;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.questionButton {
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+    display:inline;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+.floatL{
+	float:left;
+}
+.floatR{
+	float:right;
+}
+
+.pdgtb_20{
+	padding:20px 0px 20px 0px;
+}
+
+.red{
+	color: #F00;
+	font-size:90%;
+	margin-top:5px;
+}
+
+.caution{
+	color: #333333;
+	font-size:80%;
+	text-align: right;
+	margin:10px;
+}
+
+.ellipsis {
+	word-break:break-all;
+}
+
+.thanks{
+	font-size:90%;
+	margin-top:30px;
+	color: #333333;
+	background-color: #FFFFFF;
+	padding:15px;
+}
+
+/*CLEARFIX*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+/*\*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/**/
+
+.clearboth { clear: both;}
+br.clear { clear: both; margin: 0; padding: 0; font-size: 0; line-height: 0; }
+
+
+
+
+-->
+</style>
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+window.onerror = function() {
+    alert("Error caught");
+};
+
+<!--
+
+$(function(){
+	$("#resultButton").hide();
+});
+
+function changeButton() {
+	$("#resultButton").show();
+	$("#replySendButton").hide();
+	$("#replySendButtonDiv").hide();
+}
+
+
+function setResultSendType(resultSendType) {
+	$("#resultSendType").val(resultSendType);
+}
+
+function initDisplay(questionNo) {
+	location.href="#Q" + questionNo;
+}
+
+
+function setConfirmVal(qn) {
+	var val = "";
+	$('input[name^="' + qn + '"]').each(function(){
+		var type = $(this).attr('type');
+		if (type == "checkbox" || type == "radio") {
+			if ($(this).prop('checked')) {
+				if (val != "") {
+					val += "<br />";
+				}
+
+				var tmpVal = "";
+				var imageVal = "";
+				var obj = $("label[for='"+$(this).attr("id")+"']");
+				var name = obj.attr("name");
+
+				tmpVal += obj.text();
+								var image = obj.parent().children("img").eq(0);
+				
+				if (tmpVal != "" || image != "") {
+
+					val += name + ". ";
+					val += escapeHTML(tmpVal);
+					var imageVal = "";
+					if (tmpVal != "" && image != "") {
+						val += "<br />";
+						imageVal = $("<div>").append( image.clone().css({"padding-left": "20px", "vertical-align": "top"}) ).html();
+					} else {
+						imageVal = $("<div>").append( image.clone().css({"padding-top": "5px", "vertical-align": "top"}) ).html();
+					}
+					val += imageVal;
+				}
+			}
+
+		} else if (type == "text") {
+			var textVal = $(this).attr('value');
+			if (textVal) {
+				val = val? val + "(" + escapeHTML(textVal) + ")": escapeHTML(textVal);
+			}
+			if (textVal=="") {
+				val = val? val : textVal;
+			}
+		}
+	});
+
+	$('textarea[name^="' + qn + '"]').each(function(){
+		var textVal = $(this).val();
+		if (textVal) {
+			val = val? val + "(" + escapeHTML(textVal) + ")": escapeHTML(textVal);
+		}
+		if (textVal=="") {
+			val = val? val : textVal;
+		}
+	});
+
+	$('select[name^="' + qn + '"]').each(function(){
+		var textVal = $(this).find(':selected').text();
+		if (textVal) {
+			val = val? val + "(" + escapeHTML(textVal) + ")": escapeHTML(textVal);
+		}
+		if (textVal=="") {
+			val = val? val : textVal;
+		}
+		$(this).blur();
+	});
+
+	if (val != "" || qn.indexOf("entry_field") >= 0) {
+		$('#' + qn + '_val').html(val);
+	}
+
+	return val;
+}
+
+
+
+$(window).load(function(){
+	windowChange();
+
+
+
+	if ($("#resultSendType").val() == "webdirect" || $("#resultSendType").val() == "preview") {
+					}
+
+});
+
+$(window).resize(function() {
+});
+
+
+function windowChange() {
+		$(".inputLine").each(function(){
+		var maxHeight = 0;
+	});
+}
+
+
+
+
+function escapeHTML(str) {
+	return str.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function validate() {
+	if (performCheck('mainForm', rules, 'innerHtml')) {
+		
+		
+		
+		
+		
+																setConfirmVal("q_1_1019");
+																setConfirmVal("q_2_1020");
+							
+			showConfirm();
+
+					} else {
+		window.scrollTo(0,0);
+	}
+}
+
+function showInput() {
+	$("#replyInput").show("fast");
+	$("#replyConfirm").hide();
+	$("#replyEnd").hide();
+	window.scrollTo(0,0);
+}
+
+function showConfirm() {
+	$("#replyInput").hide();
+	$("#replyConfirm").show("fast");
+	$("#replyEnd").hide();
+	initDisplay(0);
+	window.scrollTo(0,0);
+}
+
+function showEnd() {
+	$("#replyInput").hide();
+	$("#replyConfirm").hide();
+	$("#enquete").hide();
+	$("#replyEnd").show("fast");
+	initDisplay(0);
+	window.scrollTo(0,0);
+}
+
+function showMsgs() {
+	$("#replyInput").hide();
+	$("#replyConfirm").hide();
+	$("#enquete").hide();
+	$(".marking").hide();
+	$(".thanks").show("fast");
+	$("#replyEnd").show("fast");
+	initDisplay(0);
+	window.scrollTo(0,0);
+}
+
+var isEncode = false;
+function submitForm() {
+			if(isEncode) {
+					setSubmitVal("q_1_1019");
+					setSubmitVal("q_2_1020");
+			}
+
+	if ($("#resultSendType").val() == "preview") {
+					showEnd();
+				return;
+	}
+
+	if ($("#resultSendType").val() == "webdirect") {
+			}
+			window.external.InvokeMeFromJavascript( setParamForWin() );
+	}
+function setParamForWin() {
+	var paramStr = "";
+
+	$('input').each(function(){
+
+		var name = $(this).attr("name");
+		if (name != null && name != "" && name != undefined) {
+
+			var type = $(this).attr("type");
+			if (type == "checkbox" || type == "radio") {
+				if ($(this).prop('checked')) {
+					if (paramStr != "") {
+						paramStr += "&";
+					}
+					paramStr += name + "=" + encodeURIComponent( $(this).val() );
+				}
+			} else {
+				if (paramStr != "") {
+					paramStr += "&";
+				}
+				paramStr += name + "=" + encodeURIComponent( $(this).val() );
+			}
+		}
+	});
+
+	$('textarea').each(function(){
+
+		var name = $(this).attr("name");
+		if (name != null && name != "" && name != undefined) {
+
+			if (paramStr != "") {
+				paramStr += "&";
+			}
+			paramStr += name + "=" + encodeURIComponent( $(this).val() );
+		}
+	});
+
+	$('select').each(function(){
+
+		var name = $(this).attr("name");
+		if (name != null && name != "" && name != undefined) {
+
+			if (paramStr != "") {
+				paramStr += "&";
+			}
+			paramStr += name + "=" + encodeURIComponent( $(this).val() );
+		}
+	});
+
+	return "?" + paramStr;
+}
+function escapeHTML2(str) {
+	str = str.replace(/;/g, "＆#59;").replace(/&/g, "&amp;").replace(/＆#59;/g, "&#59;").replace(/=/g, "&#61;");
+	return str;
+}
+setEncodeForText(true);
+function setEncodeForText(boolean) {
+	isEncode = boolean;
+}
+function setSubmitVal(qn) {
+	$('input[name^="' + qn + '"]').each(function(){
+		var type = $(this).attr('type');
+		if (type == "text") {
+			var textVal = $(this).attr('value');
+			$(this).val(escapeHTML2(textVal));
+		}
+	});
+	$('textarea[name^="' + qn + '"]').each(function(){
+		var textVal = $(this).val();
+		$(this).val(escapeHTML2(textVal));
+	});
+}
+
+
+function date_ge(qn, comp, msg) {
+	var targetStr = $("[name=" + qn + "]").get(0).value;
+	if (targetStr || targetStr == "") {
+		if (targetStr == "") {
+			return null;
+		}
+		var target = Date.parse(targetStr);
+		if (!isNaN(target) && target >= Date.parse(comp)) {
+			return null;
+		}
+	}
+	return msg;
+}
+
+// チェックボックスの場合
+function checkVal(qn) {
+	var val = 0;
+	 $('input[name^="' + qn + '"]').each(function(){
+		var name = $(this).attr('name');
+		//var id = $(this).attr('id');
+		var type = $(this).attr('type');
+		if ($(this).prop('checked')) {
+			if (type == "checkbox") {
+				val++;
+			}
+		}
+		// チェックボックスの自由入力欄(nameがcheckboxのnameid_txt)
+		if (type == "checkbox") {
+			var nm = $(this).attr("id") + '_txt';
+			var txtnm = $('input[name="' + nm + '"]').attr('name');
+			if (txtnm != null && txtnm == nm) {
+				if ($(this).prop('checked')) {
+					$('input[name="' + txtnm + '"]').removeAttr("disabled");
+				} else {
+
+					$('input[name="' + txtnm + '"]').val('');
+					$('input[name="' + txtnm + '"]').attr("disabled", "disabled");
+				}
+			}
+		}
+	});
+	// hiddenに個数設定
+	if (val > 0) {
+		$("[name=" + qn + "]").eq(0).val(val);
+	}
+}
+
+var isAndroid403 = false; // Android versionが4.0.3のときのための特別対応(WebViewが透明化するのを防止)
+var isLargeFontSize = false;
+
+function setAndroid403(val) {
+	isAndroid403 = val;
+}
+
+function forAndroid403(applyLarge) {
+	if (isAndroid403) {
+		if (isLargeFontSize) {
+			if (applyLarge) {
+				largeFontSize();
+			} else {
+				defaultFontSize();
+			}
+		} else {
+			defaultFontSize();
+		}
+	}
+}
+
+function defaultFontSize() {
+	isLargeFontSize = false;
+	jQuery("body").css("font-size","16px");
+	jQuery(':input').css("font-size","16px").css("vertical-align","middle");
+	jQuery('.ui-btn-text').css('font-size','16px');
+	jQuery(":button").css("text-align","center").css("font-size","16px");
+}
+
+
+function largeFontSize() {
+	isLargeFontSize = true;
+	jQuery("body").css("font-size","19px");
+	jQuery(':input').css("font-size","19px").css("vertical-align","middle");
+	jQuery('.ui-btn-text').css('font-size','19px');
+	jQuery(":button").css("text-align","center").css("font-size","19px");
+}
+
+function ipadSize() {
+	jQuery(":input").not(".notResize").css("width","200px").css("vertical-align","middle");
+	jQuery("textarea").not(".notResize").css("width","200px").css("font-size","16px");
+			jQuery(":text").not(".notResize").css("width","160px");
+		jQuery(":button").not(".notResize").css("width","80px").css("height","40px").css("text-align","center").css("font-size","16px");
+}
+
+
+
+function fixWidth(width) {
+	jQuery(":input").not(".notResize").css("width",width+"px").css("vertical-align","middle");
+	jQuery("textarea").not(".notResize").css("width",width+"px").css("font-size","16px");
+	jQuery(":text").not(".notResize").css("width",width+"px");
+}
+
+var userAgent = window.navigator.userAgent.toLowerCase();
+
+function addWidthToStyle(obj, width) {
+	obj.attr("style", function(i, s) {
+		if(s.lastIndexOf("width:" + width) == -1) {
+			return s + "width:" + width + " !important;";
+		}
+	});
+}
+
+function resizeWidth() {
+    var winW = parseInt(document.documentElement.clientWidth);
+    if (window.innerWidth){
+        winW = parseInt(window.innerWidth);
+    }
+    if(winW >= 990){
+        document.getElementById("content_outside").style.width = "970px";
+        var minW = "970px";
+	   }else{
+		var minW = "100%";
+		if (winW >= 400) {
+			addWidthToStyle(jQuery("input:text"), "80%");
+			addWidthToStyle(jQuery("textarea"), "90%");
+			addWidthToStyle(jQuery("select"), "90%");
+			addWidthToStyle(jQuery("input:radio"), "90%");
+			addWidthToStyle(jQuery("input:checkbox"), "90%");
+		} else {
+			addWidthToStyle(jQuery("input"), minW);
+			addWidthToStyle(jQuery("textarea"), minW);
+			addWidthToStyle(jQuery("select"), minW);
+		}
+		document.getElementById("content_outside").style.width = minW;
+	    }
+}
+
+
+
+
+$(document).ready(function() {
+	$("#submitAjaxForm").keypress(function(ev) {
+		if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {
+						if ($(":focus")[0].tagName == "TEXTAREA") {
+				return true;
+			}
+			return false;
+		} else {
+			return true;
+		}
+	});
+});
+
+
+$(function(){
+		defaultFontSize();
+
+	$('input[type=hidden]').each(function(){
+		var name = $(this).attr('name');
+		if (name && name.indexOf("q_") == 0) {
+			checkVal(name);
+		}
+	});
+
+	showInput();
+
+
+	//jQuery("select").css("width","300px");
+	//jQuery("input").css("width","300px").css("vertical-align","middle");
+
+// ラジオボタンの自由入力欄
+	// 初期表示
+	$('input[type=radio]').each(function(){
+		if ($(this).prop('checked')) {
+			var id = $(this).attr("id") + '_txt';
+			var txtnm = $('input[name="' + id + '"]').attr('name');
+			if (txtnm != null && txtnm == id) {
+				$('input[name="' + id + '"]').removeAttr("disabled");
+			}
+		}
+	});
+
+	// 変更時
+	$('input:radio').change(function(){
+		var nm = $(this).attr("name") + '_txt';
+		var id = $(this).attr("id") + '_txt';
+		var txtnm = $('input[name="' + id + '"]').attr('name');
+		if (txtnm != null && txtnm == id) {
+			$("#"+ nm).removeAttr("disabled");
+		} else {
+			$("#"+ nm).val('');
+			$("#"+ nm).attr("disabled", "disabled");
+		}
+	});
+// テンプレート（icheckのcallback）
+});
+
+
+HEADER_MSG = "入力いただいた内容に誤りがあるか、未入力の項目があります。";
+FOOTER_MSG = "該当項目を修正の上、再度確認ボタンを押してください。";
+DEFAULT_MSG = "エラー";
+
+var rules=new Array();
+rules[0]='q_2_1020|minlength|100|Q2の長さが最小値(100)未満です。';
+rules[1]='q_2_1020|maxlength|100|Q2の長さが最大値(100)を超えています。';
+
+function ajaxSubmit() {
+
+	// 操作対象のフォーム要素を取得
+	var form_ = $('#submitAjaxForm');
+
+	// 送信ボタンを取得
+	// （後で使う: 二重送信を防止する。）
+	var button_ = $('#replySendButton');
+
+	// 送信
+	jQuery.ajax({
+		url: form_.attr('action'),
+		type: form_.attr('method'),
+		data: form_.serialize(),
+		timeout: 10000,  // 単位はミリ秒
+
+		// 送信前
+		beforeSend: function(xhr, settings) {
+			// ボタンを無効化し、二重送信を防止
+			button_.attr('disabled', true);
+		},
+		// 応答後
+		complete: function(xhr, textStatus) {
+			// ボタンを有効化し、再送信を許可
+			button_.attr('disabled', false);
+		},
+		// 通信成功時の処理
+		success: function(result, textStatus, xhr) {
+			showEnd();
+		},
+
+		// 通信失敗時の処理
+		error: function(xhr, textStatus, error) {}
+	});
+
+}
+
+//-->
+</script>
+</head>
+
+<body class="ui-mobile-viewport" style="color: #0066FF; background-color: #F3F3F3;">
+
+
+<a name="Q0"></a>
+<form name="mainForm" id="submitAjaxForm" action="abook-api://" method="post" >
+<input type="hidden" name="resourceId" id="resourceId" value="5380">
+<input type="hidden" id="resultSendType" value="abv">
+<!-- common header -->
+<div data-role="page" id="enquete" data-theme="f" style="margin:0; padding:0;">
+	<div class="category" data-role="content" data-theme="d" style="padding: 0; margin: 0;">
+<!-- 回答画面 start -->
+<div class="ellipsis" id="replyInput" style="color: #0066FF; background-color: #F3F3F3; padding: 10px 10px 10px 10px;">
+	<!-- ヘッダー start -->
+	<b class="enquete_type">Enquente Full</b>
+	<hr size="1">
+	
+		<!-- 注意書き start -->
+	<p class="nobr caution">「<font color=red>*</font>」は入力必須。禁止文字：半角カナ</p>
+	<!-- 注意書き end -->
+	
+		<div id=errorsDiv></div>
+	<!-- ヘッダー end -->
+
+	
+	<!-- 質問 start -->
+	<div id="replyInputQuestion" class="clearfix">
+		<a name="Q1"></a>
+		<div class="question_num">Q1</div>
+				<div class="question_title ellipsis">
+		One = ?
+				</div>
+			</div>
+	<!-- 質問  end -->
+	<!-- 回答欄 start -->
+	<div id="replyInputChoice">
+										<table data-role="none" width="100%" class="choice_area" style="max-width :100%; margin:0; padding:0;">
+						<tr style="margin:0; padding:0;" class="inputLine">
+														
+																																																							<td width="100%" colspan="1" style="max-width: 100%; text-align:left; vertical-align:top; margin:0; padding:0;">
+									<div width="100%">
+<table data-role="none" width="100%" style="float:left; word-break: break-all !important; white-space: normal !important;">
+																											<tr class="inputLine">
+<td style="width: 1% !important; vertical-align:top;">
+<input data-role="none" style="font-size: 90%; line-height: 1; width: 16px !important;" type="radio" id="q_1_1019_a_1_1275" name="q_1_1019"  value="1275" data-no="1" >
+</td>
+<td style="width: auto; text-align:left; vertical-align:top; word-break: break-all !important; white-space: normal !important;">
+<label data-role="none" style="width: auto; text-align:left; vertical-align:middle; margin:0; padding:0;" for="q_1_1019_a_1_1275" name="1" onclick=""><span data-role="none" style="width: auto; word-wrap: break-word; text-align:left; vertical-align: middle; margin:0; padding:0;">1</span></label>
+</td>
+																																				</tr>
+									</table>
+									</div>
+								</td>
+																																	</tr><tr style="margin:0; padding:0;" class="inputLine">
+																																<td width="100%" colspan="1" style="max-width: 100%; text-align:left; vertical-align:top; margin:0; padding:0;">
+									<div width="100%">
+<table data-role="none" width="100%" style="float:left; word-break: break-all !important; white-space: normal !important;">
+																											<tr class="inputLine">
+<td style="width: 1% !important; vertical-align:top;">
+<input data-role="none" style="font-size: 90%; line-height: 1; width: 16px !important;" type="radio" id="q_1_1019_a_2_1276" name="q_1_1019"  value="1276" data-no="2" >
+</td>
+<td style="width: auto; text-align:left; vertical-align:top; word-break: break-all !important; white-space: normal !important;">
+<label data-role="none" style="width: auto; text-align:left; vertical-align:middle; margin:0; padding:0;" for="q_1_1019_a_2_1276" name="2" onclick=""><span data-role="none" style="width: auto; word-wrap: break-word; text-align:left; vertical-align: middle; margin:0; padding:0;">2</span></label>
+</td>
+																																				</tr>
+									</table>
+									</div>
+								</td>
+							
+																				</tr>
+					</table>
+			</div>
+	<!-- 回答欄 end -->
+	<!-- 質問 start -->
+	<div id="replyInputQuestion" class="clearfix">
+		<a name="Q2"></a>
+		<div class="question_num">Q2</div>
+				<div class="question_title ellipsis">
+		What is the mount highest in the Japan?
+					<br> Fuji mount
+				</div>
+			</div>
+	<!-- 質問  end -->
+	<!-- 回答欄 start -->
+	<div id="replyInputChoice">
+												<input data-role="none" type="text" name="q_2_1020"  value=""  size="20"/>
+									</div>
+	<!-- 回答欄 end -->
+	<!-- フッター start -->
+	<div class="ellipsis" align="left" style="padding: 10px 0px 20px 5px;">
+		<hr size="1">
+		
+<br>
+		<input data-role="none" value="確 認" type="button" class="questionButton" style='' onclick="validate(); return false;">
+	</div>
+	<!-- フッター end -->
+</div>
+<!-- 回答画面 start -->
+
+<!-- 確認画面 start -->
+<div id="replyConfirm" style="color: #0066FF; background-color: #F3F3F3; padding: 10px 10px 10px 10px;">
+	<b class="enquete_type">Enquente Full</b>
+	<hr size="1">
+	
+		<!-- 注意書き start -->
+	<p class="nobr caution">「<font color=red>*</font>」は入力必須。禁止文字：半角カナ</p>
+	<!-- 注意書き end -->
+	
+		<div id=errorsDiv></div>
+
+	
+			<!-- 質問 start -->
+		<div id="replyConfirmQuestion" class="clearfix">
+			<div class="question_num">Q1</div>
+						<div class="question_title ellipsis">
+				One = ?
+							</div>
+					</div>
+		<!-- 質問 end -->
+		<!-- 回答欄 start -->
+				<div id="q_1_1019_val" class="replyConfirmChoice ellipsis"></div>
+				<!-- 回答欄 end -->
+			<!-- 質問 start -->
+		<div id="replyConfirmQuestion" class="clearfix">
+			<div class="question_num">Q2</div>
+						<div class="question_title ellipsis">
+				What is the mount highest in the Japan?
+									<br> Fuji mount
+							</div>
+					</div>
+		<!-- 質問 end -->
+		<!-- 回答欄 start -->
+				<div id="q_2_1020_val" class="replyConfirmChoice ellipsis"></div>
+				<!-- 回答欄 end -->
+		<div style="padding: 10px 0px 10px 5px;">
+				<input data-role="none" value="戻る" type="button" class="questionButton" style='' onclick="showInput(); return false;">
+		<input data-role="none" value="送信" id="replySendButton" type="button" class="questionButton" onclick="submitForm(); return false;">
+		<input data-role="none" value="採点" id="resultButton" type="button" class="questionButton" onclick="submitForm(); return false;">
+				<hr size="1">
+	</div>
+</div>
+<!-- 確認画面 end -->
+</div>
+</div>
+<!-- 完了画面 start -->
+<div id="replyEnd" >
+
+	<b class="enquete_type">Enquente Full</b>
+	<hr size="1">
+	
+		<div class="thanks">
+		<b class="enquete_type">Enquente Full</b>
+		<hr size="1">
+			
+		<hr size="1">
+	</div>
+	</div>
+<!-- 完了画面 end -->
+</div>
+<!-- common header -->
+</form>
+</body>
+</html>

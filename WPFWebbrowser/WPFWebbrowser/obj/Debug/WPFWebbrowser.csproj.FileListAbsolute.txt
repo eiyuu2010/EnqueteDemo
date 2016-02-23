@@ -27,4 +27,4 @@ C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFW
 C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFWebbrowser\WPFWebbrowser\obj\Debug\WPFWebbrowser.exe
 C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFWebbrowser\WPFWebbrowser\obj\Debug\WPFWebbrowser.pdb
 C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFWebbrowser\WPFWebbrowser\bin\Debug\WPFWebbrowser.exe.config
-C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFWebbrowser\WPFWebbrowser\obj\Debug\WPFWebbrowser.csprojResolveAssemblyReference.cache
+C:\Users\hoang\Downloads\Abhi2434_Articles_634061241258134766_WPFWebbrowser\WPFWebbrowser\WPFWebbrowser\bin\Debug\ADF.Core.dll

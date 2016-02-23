@@ -1,0 +1,8 @@
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\bin\Debug\WFormDemo.exe.config
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\bin\Debug\WFormDemo.exe
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\bin\Debug\WFormDemo.pdb
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\obj\Debug\WFormDemo.Form1.resources
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\obj\Debug\WFormDemo.Properties.Resources.resources
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\obj\Debug\WFormDemo.csproj.GenerateResource.Cache
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\obj\Debug\WFormDemo.exe
+c:\users\hoang\documents\visual studio 2013\Projects\WFormDemo\WFormDemo\obj\Debug\WFormDemo.pdb
